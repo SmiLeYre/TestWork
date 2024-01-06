@@ -9,52 +9,52 @@
     </head>
     <body>
         Задача: отобразить таблицу размером 5 на 4. По оси X ячейки именуются буквами, по оси Y числами.<br></br>
-        Следом требуется заполнить таблицу результатами выражений, которые в свою очередь будут демонстрироваться после решения покинуть ячейку.
-        <br></br>
+        Следом требуется заполнить таблицу результатами выражений, которые в свою очередь будут демонстрироваться после решения покинуть ячейку.<br></br>
+        Итогом должна быть возможность использовать результаты выражений из ячеек таблицы в других ячейках этой таблицы.<br></br>
         <br></br>
         <table class="tg">
             <thead>
                 <tr>
                     <td class="tg-letters"></td>
                     <td class="tg-letters">A</td>
-                    <td class="tg-letters">Б</td>
-                    <td class="tg-letters">В</td>
-                    <td class="tg-letters">Г</td>
-                    <td class="tg-letters">Д</td>
+                    <td class="tg-letters">B</td>
+                    <td class="tg-letters">C</td>
+                    <td class="tg-letters">D</td>
+                    <td class="tg-letters">F</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="tg-numbers">1</th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="1 + 1"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="658 + 34"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="132 - 12"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="123 + 11"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="38 + 4"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="A1"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="B1"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="C1"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="D1"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="F1"></th>
                 </tr>
                 <tr>
                     <td class="tg-numbers">2</th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="7 * 7"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="18 + 39"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="12 - 14"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="3 + 5"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="2 + 2"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="A2"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="B2"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="C2"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="D2"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="F2"></th>
                 </tr>
                 <tr>
                     <td class="tg-numbers">3</th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="23 / 12"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="Math.sqrt(69)"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="213 + 21"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="10 * 10 * 10"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="13+41"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="A3"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="B3"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="C3"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="D3"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="F3"></th>
                 </tr>
                 <tr>
                     <td class="tg-numbers">4</th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="5 * 4"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="10 / 2"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="7 - 5"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="Math.pow(2, 3)"></th>
-                    <th class="tg-js-script" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" data-expression="Math.sqrt(16)"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="A4"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="B4"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="C4"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="D4"></th>
+                    <th class="tg-js-script" contenteditable="true" onmouseenter="showResult(this)" onmouseleave="showExpression(this)" id="F4"></th>
                 </tr>
             </tbody>
         </table>
